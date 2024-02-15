@@ -4,6 +4,6 @@ module.exports = {
     name: "ping",
 
     async run(bot, message) {
-        await message.reply(`Latence API Discord : \`${bot.ws.ping}ms\``)
+        await message.reply(`Latence API Discord : \`${bot.ws.ping}ms\`\nLatence Utilisateur : \`${Date.now() - message.createdTimestamp}ms\``)
     }
 }
