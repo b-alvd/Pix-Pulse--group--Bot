@@ -7,7 +7,7 @@ module.exports = {
     dm: true,
     options: [],
 
-    async run(bot, message) {
+    async run(bot, message, args) {
         await message.reply(`Latence API Discord : \`${bot.ws.ping}ms\`\nLatence Utilisateur : \`${Date.now() - message.createdTimestamp}ms\``)
     }
 }
